@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+<body>
+      <header>
+        <h1>Interactive Photo Gallery</h1>
+    </header>
+
+    <!-- Filter Section  -->
+    <section id="filter-section">
+        <button class="filter-btn" data-category="nature">Nature</button>
+        <button class="filter-btn" data-category="city">City</button>
+        <button class="filter-btn" data-category="people">People</button>
+        <button class="filter-btn" data-category="all">All</button>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery-section">
+       <!-- City Images -->
+       <div class="gallery-item" data-category="city">
+        <img src="images/town/anders-jilden-nxCtO8W9JLo-unsplash.jpg" alt="City Image">
+    </div>
+    <div class="gallery-item" data-category="city">
+        <img src="images/town/andrea-cau-nV7GJmSq3zc-unsplash.jpg" alt="City Image">
+    </div>
+    <div class="gallery-item" data-category="city">
+        <img src="images/town/ben-o-bro-wpU4veNGnHg-unsplash.jpg" alt="City Image">
+    </div>
+    <div class="gallery-item" data-category="city">
+        <img src="images/town/daniel-zacatenco-sx0cAH8TEYk-unsplash.jpg" alt="City Image">
+    </div>
+       
+        <!-- Nature Images -->
+                      <div class="gallery-item" data-category="nature">
+            <img src="images/nature/johannes-andersson-UCd78vfC8vU-unsplash.jpg" alt="Nature Image">
+        </div>
+        <div class="gallery-item" data-category="nature">
+            <img src="images/nature/kristin-wilson-RCcLIJvLCkY-unsplash.jpg" alt="Nature Image">
+        </div>
+        <div class="gallery-item" data-category="nature">
+            <img src="images/nature/maksim-shutov-GcOknFsnJvs-unsplash.jpg" alt="Nature Image">
+        </div>
+        <div class="gallery-item" data-category="nature">
+            <img src="images/nature/maksim-shutov-nQDTxgmB8eQ-unsplash.jpg" alt="Nature Image">
+        </div>
+        
+                 <!-- People Images -->
+        <div class="gallery-item" data-category="people">
+            <img src="images/people/gettyimages-125144538-2048x2048.jpg" alt="People Image">
+        </div>
+        <div class="gallery-item" data-category="people">
+            <img src="images/people/gettyimages-1345688446-1024x1024.jpg" alt="People Image">
+        </div>
+        <div class="gallery-item" data-category="people">
+            <img src="images/people/gettyimages-1571595230-2048x2048.jpg" alt="People Image">
+        </div>
+        <div class="gallery-item" data-category="people">
+            <img src="images/people/istockphoto-1137781079-1024x1024.jpg" alt="People Image">
+        </div>
+      
+    <!-- Lightbox and Horizontal Scrolling -->
+    <div id="lightbox-overlay" style="display: none;">
+        <div id="lightbox">
+            <span id="close-lightbox">X</span>
+            <div id="lightbox-content">
+                <button id="prev-arrow">&#8592;</button>
+                <img id="lightbox-img" src="" alt="Selected Image">
+                <button id="next-arrow">&#8594;</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+    </body>
+</html>
